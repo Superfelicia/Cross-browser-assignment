@@ -63,18 +63,18 @@
 
 //services-main
 .services-main {
+    @include space-between;
     padding-top: 6%;
     padding-bottom: 6%;
-    @include space-between;
 
     .services-text {
-        width: 55%;
         @include title-text-medium;
+        width: 55%;
     }
 
     .services-list {
-        width: 35%;
         @include space-between;
+        width: 35%;
         align-items: center;
         flex-wrap: wrap;
 
@@ -88,12 +88,55 @@
     }
 }
 
+//main awards
 .awards-main {
     border-top: 2px solid $color-grey;
 }
 
 .main-container-awards {
+    @include space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     width: 95%;
     padding: 4% 2%;
     border-bottom: 2px solid $color-grey;
+
+    .awards-content-main {
+        @include space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 60%;
+        min-height: 380px;
+        
+        .award-container {
+            @include space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+}
+
+.big-awards-title {
+    @include title-main;
+    padding: 0% 4% 2% 0;
+}
+
+.award-title {
+    @include text-medium;
+    padding: 0% 6% 2%;
+}
+
+.award-info {
+    max-width: 200px;
+    padding: 0% 6% 2%;
+
+    .small-awards-title {
+        @include text-small;
+    }
+
+    .small-text {
+        @include text-small;
+        color: $color-transparent;
+    }
 }

@@ -1,8 +1,49 @@
+//container
 .footer {
     @extend .nav-header;
-    padding-top: 10px;
+    padding-top: 8%;
 
-    &-container_menu {
-        @extend .nav-menu
+    .footer-container-menu {
+        @extend .nav-header;
+    }
+}
+
+.footer-content {
+    @extend .nav-header;
+    flex-wrap: wrap;
+    max-width: 300px;
+
+    .foot-links {
+        @extend .nav-header;
+    }
+    
+    .footer-socials {
+        @extend .nav-header;
+        max-width: 95px;
+        padding: 0 2%;
+    }
+}
+
+.logo-footer:hover {
+    @include transition;
+    opacity: $opacity;
+}
+
+.foot-link {
+    @include text-medium;
+    text-decoration: none;
+
+    &:hover {
+        @include transition;
+        color: $color-transparent;
+    }
+}
+
+.icon {
+    @include title-text-medium;
+
+    &:hover {
+        @include transition;
+        color: $color-transparent;
     }
 }

@@ -4,13 +4,13 @@
     padding: 4% 0;
     
     &-menu {
+        @include space-between;
         width: 100%;
         align-items: center;
-        @include space-between;
         
         &-links {
-        max-width: 165px;
-        @extend .nav-header;
+            @extend .nav-header;
+            max-width: 165px;
         }
     }
 }
