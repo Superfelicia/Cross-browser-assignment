@@ -1,0 +1,72 @@
+//text-styles
+@mixin title-main {
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+@mixin title-text-large {
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $color-black;
+}
+
+@mixin title-quote {
+    font-family: $base-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-transparent;
+}
+
+@mixin title-text-medium {
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: $color-black;
+}
+
+@mixin text-medium {
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-black;
+}
+
+@mixin title-text-small {
+    font-family: $base-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-black;
+}
+
+@mixin text-small {
+    font-family: $base-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-black;
+}
+
+//positions
+@mixin center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+//transitions
+@mixin transition {
+    transition: 0.5s ease-in-out;
+}

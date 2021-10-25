@@ -1,0 +1,8 @@
+.footer {
+    @extend .nav-header;
+    padding-top: 10px;
+
+    &-container_menu {
+        @extend .nav-menu
+    }
+}

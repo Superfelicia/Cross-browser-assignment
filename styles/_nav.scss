@@ -1,0 +1,34 @@
+.nav-header {
+    width: 80%;
+    max-width: $content-width;
+    padding: 4% 0;
+    
+    &-menu {
+        width: 100%;
+        align-items: center;
+        @include space-between;
+        
+        &-links {
+        max-width: 165px;
+        @extend .nav-header;
+        }
+    }
+}
+
+.logo:hover {
+    opacity: $opacity;
+    transform: scale(1.2);
+    @include transition;
+}
+
+.nav-link {
+    @include text-medium;
+    padding: 0 2%;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-purple;
+        @include transition;
+    }
+}
