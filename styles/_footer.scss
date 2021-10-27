@@ -1,18 +1,25 @@
 //container
 .footer {
     @extend .nav-header;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
 }
 
 .footer-content {
     @include footer-display;
-    flex-direction: row;
+    align-items: center;
 
     .foot-links {
         @include footer-display;
+        align-items: center;
+        justify-content: flex-end;
     }
     
     .footer-socials {
-        max-width: 95px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
     }
 }
 
@@ -23,8 +30,8 @@
 
 .foot-link {
     @include text-medium;
-    width: 100%;
     text-decoration: none;
+    margin: 15px;
 
     &:hover {
         @include transition;

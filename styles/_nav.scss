@@ -6,7 +6,7 @@
     &-menu {
         @include space-between;
         width: 100%;
-        align-items: center;
+        align-content: center;
         
         &-links {
             @extend .nav-header;
@@ -30,7 +30,7 @@
     padding: 0 2%;
     font-weight: bold;
     text-decoration: none;
-    
+
     .nav-link:hover {
         @include transition;
         color: $color-purple;
