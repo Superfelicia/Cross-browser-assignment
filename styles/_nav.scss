@@ -16,9 +16,13 @@
 }
 
 .logo:hover {
+    @include transition;
     opacity: $opacity;
     transform: scale(1.2);
-    @include transition;
+}
+
+.nav-links {
+    @include nav-display;
 }
 
 .nav-link {
@@ -26,9 +30,10 @@
     padding: 0 2%;
     font-weight: bold;
     text-decoration: none;
+    grid-column: 8/9;
 
     &:hover {
-        color: $color-purple;
         @include transition;
+        color: $color-purple;
     }
 }

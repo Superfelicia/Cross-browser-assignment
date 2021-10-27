@@ -6,29 +6,26 @@
 
 //intro
 .title-main {
+    @include space-between;
     width: 100%;
     padding-top: 3%;
-    @include space-between;
 
     .title-text-intro {
-        max-width: 630px;
+        @include title-text-large;
+        max-width: 635px;
         width: 100%;
         display: flex;
         flex-direction: column;
+        
+        .purple-text {
+            color: $color-purple;
+        }
     }
 }
 
 .title-first {
     @include title-main;
     color: $color-purple;
-}
-
-.title-text-intro {
-    @include title-text-large;
-
-    .purple-text {
-        color: $color-purple;
-    }
 }
 
 .title-quote-main {
@@ -80,6 +77,7 @@
 
         .list {
             @include title-quote;
+            flex-direction: column;
             font-weight: 400;
             line-height: 35px;
             list-style-type: none;
@@ -117,6 +115,13 @@
     }
 }
 
+/*.award-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: space-between;
+}*/
+
 .big-awards-title {
     @include title-main;
     padding: 0% 4% 2% 0;
@@ -124,19 +129,19 @@
 
 .award-title {
     @include text-medium;
-    padding: 0% 6% 2%;
+    padding: 0% 6% 2% 0;
 }
 
 .award-info {
     max-width: 200px;
-    padding: 0% 6% 2%;
+    padding: 0% 6% 2% 0;
 
     .small-awards-title {
         @include text-small;
-    }
-
-    .small-text {
-        @include text-small;
-        color: $color-transparent;
+        
+        .small-text {
+            @include text-small;
+            color: $color-transparent;
+        }
     }
 }
