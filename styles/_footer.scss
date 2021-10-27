@@ -1,26 +1,18 @@
 //container
 .footer {
     @extend .nav-header;
-    padding-top: 8%;
-
-    .footer-container-menu {
-        @extend .nav-header;
-    }
 }
 
 .footer-content {
-    @extend .nav-header;
-    flex-wrap: wrap;
-    max-width: 300px;
+    @include footer-display;
+    flex-direction: row;
 
     .foot-links {
-        @extend .nav-header;
+        @include footer-display;
     }
     
     .footer-socials {
-        @extend .nav-header;
         max-width: 95px;
-        padding: 0 2%;
     }
 }
 
@@ -31,6 +23,7 @@
 
 .foot-link {
     @include text-medium;
+    width: 100%;
     text-decoration: none;
 
     &:hover {
