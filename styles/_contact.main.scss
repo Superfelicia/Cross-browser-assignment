@@ -1,0 +1,85 @@
+//main contact
+.contact-info-main {
+    @include space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 3%;
+    
+    .contact-info-text {
+        display: flex;
+        flex-direction: column;
+        max-width: 440px;
+        padding: 2% 4% 0 0;
+    }
+}
+
+.contact-title-container {
+    max-width: 475px;
+    width: 70%;
+    
+    .title-first {
+        @include title-text-large;
+        display: flex;
+        flex-wrap: wrap;
+
+        .title-text {
+            @include text-small;
+        }
+    }
+}
+
+//form
+.contact-form {
+    @include space-between;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+    min-height: 290%;
+    padding: 5% 4% 0 0;
+    
+    .text-area {
+        @include form-text;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $color-grey;
+        cursor: text;
+        color: $color-black;
+
+        .text-area::placeholder {
+            color: $color-transparent
+        }
+    }
+}
+
+.button {
+    @include form-text;
+    width: 125px;
+    padding: 15px 0;
+    border: none;
+    background-color: $color-purple;
+    color: $color-white;   
+}
+
+//hover effects
+.button:hover {
+    @include transition;
+    background-color: darken($color-purple, 8);
+    color: $color-transparent;
+}
+
+.text-area:hover {
+    @include transition;
+    color: $color-transparent;
+    background-color: $color-grey;
+}
+
+//map
+.map-contact {
+    width: 100%;
+    padding-top: 10%;
+
+    .map {
+        width: 100%;
+    }
+}

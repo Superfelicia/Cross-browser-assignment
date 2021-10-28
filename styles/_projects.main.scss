@@ -35,18 +35,19 @@
 
     .info-container {
         display: flex;
+        align-content: center;
         width: 100%;
         border-bottom: 1px solid $color-grey;
 
         .grey-title {
-            @include title-text-medium;
-            width: 60%;
+            @include text-medium;
+            width: 50%;
+            color: $color-transparent;
         }
 
         .info-text {
-            @extend .grey-title;
-            width: 40%;
-            color: $color-transparent;
+            @include text-medium;
+            width: 50%;
         }
     }
 }
@@ -57,9 +58,12 @@
     flex-direction: column;
     width: 100%;
     padding-top: 8%;
+    
 
     .text-project-images {
         @extend .project-text;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
     
     .project-images-container {
@@ -67,11 +71,11 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding-top: 4%;
+        
+        .project-image {
+            width: 30%;
+            padding: 2% 2% 2% 0;
+        }
     }
 }
 
-.project-image {
-    width: 30%;
-    padding: 2% 2% 2% 0;
-}

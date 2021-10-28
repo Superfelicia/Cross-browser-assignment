@@ -10,7 +10,7 @@
     font-family: $base-font;
     font-weight: 700;
     font-size: 40px;
-    line-height: 60px;
+    line-height: 55px;
     color: $color-black;
 }
 
@@ -42,13 +42,21 @@
     font-family: $base-font;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 26px;
     color: $color-black;
 }
 
 @mixin text-small {
     font-family: $base-font;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-black;
+}
+
+@mixin form-text {
+    font-family: $base-font;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: $color-black;
